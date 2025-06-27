@@ -8,14 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var showPicker: Bool = false
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            List {
+                Button("Pick a Location") {
+                    showPicker.toggle()
+                }
+                .locationPicker(isPresented: $showPicker) { coordinates in
+                    if let coordinates {
+                        print(coordinates)
+                    }
+                }
+                NavigationLink("Map Look Around Simple", destination: MapLookAroundSimpleView())
+                
+                NavigationLink("Map Look Around", destination: MapLookAroundView())
+            }
+            .navigationTitle("Location Picker")
         }
-        .padding()
     }
 }
 
