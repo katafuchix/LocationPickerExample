@@ -27,3 +27,11 @@
 |Map(selection:)	|使用	|使用していない|
 |LookAroundPreview の表示元	|MapKitが制御（選択に伴って出現）	|自作 .overlay による明示表示|
 |結果の見た目	|地名・コンパス・Xつきの縮小カードUI	|展開状態に近いプレーンなビュー|
+
+
+|表示方法	|LookAroundPreview の挙動|
+|--|--|
+|Map の .overlay に直接貼る	|装飾なしの “プレーンビュー”|
+|.sheet で表示する	|高さ320px前後に収まるような カードUI風スタイル に自動調整される|
+|.sheet + .presentationDetents	|Apple Mapsと同様に「下からスライド → 拡大可能」な半モーダルになる|
+
