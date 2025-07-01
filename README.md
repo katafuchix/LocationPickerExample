@@ -15,3 +15,7 @@
 <img width="220" alt="Image" src="https://github.com/user-attachments/assets/43219bf2-c1a7-45c7-968e-74ab73e000ce" />
 <img width="220" alt="Image" src="https://github.com/user-attachments/assets/f15e0259-1836-4505-8357-d154bc9b177d" />
 </div>
+
+
+- MapKit（Map + MapFeature） ──[自動連携]──▶ LookAroundPreview（カードUI）
+- MapKit（Mapのみ）       ──[手動取得]──▶ LookAroundPreview（素のビュー）
