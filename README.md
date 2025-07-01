@@ -19,3 +19,11 @@
 
 - MapKit（Map + MapFeature） ──[自動連携]──▶ LookAroundPreview（カードUI）
 - MapKit（Mapのみ）       ──[手動取得]──▶ LookAroundPreview（素のビュー）
+
+
+|項目	|Apple Maps風	|本コード|
+|--|--|--|
+|MapFeature の使用	|あり	|なし|
+|Map(selection:)	|使用	|使用していない|
+|LookAroundPreview の表示元	|MapKitが制御（選択に伴って出現）	|自作 .overlay による明示表示|
+|結果の見た目	|地名・コンパス・Xつきの縮小カードUI	|展開状態に近いプレーンなビュー|
